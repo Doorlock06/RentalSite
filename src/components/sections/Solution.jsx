@@ -1,7 +1,17 @@
-import { FaCheckCircle, FaBuilding, FaUsers, FaChartBar, FaShieldAlt } from 'react-icons/fa';
-import '../../styles/components/solution.css';
-import digitalManagement from '../../assets/img/digital-management.jpeg';
-import dashboardBg from '../../assets/img/DashboardBG.png';
+import {
+  FaCheckCircle,
+  FaBuilding,
+  FaUsers,
+  FaChartBar,
+  FaShieldAlt,
+} from "react-icons/fa";
+import "../../styles/components/solution.css";
+import digitalManagement from "../../assets/img/digital-management.jpeg";
+import dashboardBg from "../../assets/img/DashboardBG.png";
+import MultiplePropertyImage from "../../assets/img/Group 2.png";
+import MultiplePeopleImage from "../../assets/img/Group 3.png";
+import NotificaionIcon from "../../assets/img/icons8-notification-100 (2) 1.png";
+import ExpenseDecreaseIcon from "../../assets/img/icons8-increase-100.png";
 
 const Solution = () => {
   const solutions = [
@@ -13,8 +23,8 @@ const Solution = () => {
         "View detailed performance graphs",
         "Identify most profitable rooms",
         "Manage brokers effectively",
-        "Track building expenses easily"
-      ]
+        "Track building expenses easily",
+      ],
     },
     {
       icon: <FaUsers />,
@@ -24,8 +34,8 @@ const Solution = () => {
         "Send automatic reminders",
         "Save important documents",
         "Track utility payments",
-        "Streamlined communication"
-      ]
+        "Streamlined communication",
+      ],
     },
     {
       icon: <FaChartBar />,
@@ -35,8 +45,8 @@ const Solution = () => {
         "Store receipts safely",
         "View income in simple charts",
         "Calculate tax automatically",
-        "Handle multiple currencies"
-      ]
+        "Handle multiple currencies",
+      ],
     },
     {
       icon: <FaShieldAlt />,
@@ -46,46 +56,60 @@ const Solution = () => {
         "Everything backed up online",
         "Easy to use interface",
         "Track user activities",
-        "Secure data management"
-      ]
-    }
+        "Secure data management",
+      ],
+    },
   ];
 
   return (
     <section id="solution" className="solution">
       <div className="container">
-        <h2>Transform Your Property Management</h2>
-        <p className="section-description">Here's how RentMaster makes your life easier:</p>
+        <h2>Features & Benefits</h2>
 
         <div className="solution-content">
-          <div className="solution-visual">
-            <img 
-              src={digitalManagement}
-              alt="Digital Property Management"
-              className="solution-image"
-            />
-            <img 
-              src={dashboardBg}
-              alt="Dashboard Background"
-              className="dashboard-bg-image"
-            />
+          <div className="solution-main-benift">
+            <div className="inside-main-benift">
+              <img
+                src={MultiplePropertyImage}
+                alt="Multiple Property Management"
+                className="solution-image"
+              />
+              <h3>Manage Multiple Properties</h3>
+              <p className="solution-description">Easily manage all your properties in one place. No more switching between different systems!</p>
+            </div>
           </div>
-
-          <div className="solution-grid">
-            {solutions.map((solution, index) => (
-              <div key={index} className="solution-card">
-                <div className="solution-icon">{solution.icon}</div>
-                <h3>{solution.title}</h3>
-                <ul>
-                  {solution.features.map((feature, idx) => (
-                    <li key={idx}>
-                      <FaCheckCircle className="check-icon" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+          <div className="solution-main-benift">
+            <div className="inside-main-benift">
+              <img
+                src={MultiplePeopleImage}
+                alt="Team Management"
+                className="solution-image"
+              />
+              <h3>Employee Management</h3>
+              <p className="solution-description">Track employee activities and set custom access privileges for different roles to ensure secure and organized team management</p>
+            </div>
+          </div>
+          <div className="solution-main-benift2">
+            <div className="inside-main-benift">
+              <img
+                src={NotificaionIcon}
+                alt="Smart Notifications" 
+                className="solution-image2"
+              />
+              <h3>Smart Notifications</h3>
+              <p className="solution-description">Receive email and SMS notifications for tenant rent payments, utility bills, expense payment dates, and automated reminders sent to representatives</p>
+            </div>
+          </div>
+          <div className="solution-main-benift2">
+            <div className="inside-main-benift">
+              <img
+                src={ExpenseDecreaseIcon}
+                alt="Financial Tracking"
+                className="solution-image2"
+              />
+              <h3>Financial Insights</h3>
+              <p className="solution-description">Track expenses, generate detailed financial reports, and monitor gross revenue all in one place for better financial management</p>
+            </div>
           </div>
         </div>
       </div>
@@ -93,4 +117,4 @@ const Solution = () => {
   );
 };
 
-export default Solution; 
+export default Solution;

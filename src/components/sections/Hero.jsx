@@ -1,26 +1,33 @@
-import '../../styles/components/hero.css'
-import HeroBg from '../../assets/img/HeroBg.jpg'
+// Hero.jsx
+import "../../styles/components/hero.css";
+//import HeroBg from "../../assets/img/HeroBg.jpg";
 
 const Hero = () => {
   return (
     <section id="hero" className="hero">
-      <div className="hero-background">
-        <img 
-          src={HeroBg}
-          alt="Modern Building"
-          className="hero-bg-image"
-        />
-      </div>
-      
-      <div className="hero-content">
-        <div className="hero-text">
-          <h1>Transform Your Property Management Experience</h1>
-          <p>Streamline operations, boost efficiency, and delight your tenants</p>
-          <button className="cta-button">Get Started</button>
+      <div className="wave-container">
+       
+        <div className="hero-content">
+          <div className="hero-text">
+            <h1>
+              Rent<span className="logo-highlight">Master</span>
+            </h1>
+            <p className="hero-p">
+              MAKE PROPERTY MANAGEMENT{" "}
+              <span className="hero-text-highlight">EASY</span>
+            </p>
+            <p className="hero-p-2">
+              Manage your properties better and easier with RentMaster. We
+              handle everything from rent payments to paperwork, so you can
+              spend more time growing your business.
+            </p>
+          </div>
+         
         </div>
       </div>
+      <div className="curve-separator"></div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero 
+export default Hero;

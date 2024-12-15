@@ -1,10 +1,8 @@
 .solution {
   padding: 8rem 2rem;
-  background-color: var(--Background-Color);
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  background-image: url('../../assets/img/pageBG/bottom-left-dottedBGimage.png');
+  align-items: flex-start;
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,10 +33,13 @@
 }
 
 .solution-image {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 12px;
-  box-shadow: 0 20px 40px var(--Secondary-Color30);
+  width: 200px;
+
+
+}
+.solution-image2 {
+  width: 170px;
+
 }
 
 .dashboard-bg-image {
@@ -85,7 +86,35 @@
   list-style: none;
   padding: 0;
 }
-
+.solution-main-benift {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.solution-description{
+  font-size: 0.9rem;
+  color: var(--Text-Color-Grey);
+  width: 300px;
+  margin-top: 1rem;
+  text-align: center;
+}
+.solution-main-benift2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.inside-main-benift {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inside-main-benift h3 {
+  font-size: 1.3rem;
+  color: rgb(49 79 111 / 74%) !important;
+  margin-top: 1rem;
+}
 .solution-card li {
   display: flex;
   align-items: center;

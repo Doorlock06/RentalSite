@@ -15,7 +15,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: inter;
 }
 
 html {
@@ -32,11 +32,11 @@ body {
 .app {
   width: 100%;
   min-height: 100vh;
-  background-color: #e2e2e2;
+  background: linear-gradient(to bottom, #ff000000, #b5b5b5);
 }
 
 .content {
-  padding-top: 60px; /* Height of navbar */
+ 
 }
 
 section {

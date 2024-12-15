@@ -1,10 +1,8 @@
 .features-benefits {
   padding: 8rem 2rem;
-  background-color: var(--Background-Color2);
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url('../../assets/img/pageBG/bottom-left-dottedBGimage.png');
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: cover;

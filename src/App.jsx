@@ -38,13 +38,13 @@ function App() {
       <Navbar />
       <div className="content">
         <Hero />
-        <About />
         <PainPoints />
         <Solution />
         <Features />
-        <HowItWorks />
+        
+       
         <Pricing />
-        <Testimonials />
+       
         <FAQ />
         <Contact />
       </div>
