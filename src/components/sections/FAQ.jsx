@@ -6,27 +6,44 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "How do I get started with RentMaster?",
-      answer: "Getting started is easy! Simply sign up for an account, and our setup wizard will guide you through adding your properties and tenants. Our support team is always available to help you with the onboarding process."
+
+
+      question: "What makes RentMaster different from other property management solutions?",
+      answer: "RentMaster streamlines your entire property management process by offering centralized management for all tenant information, automated payment reminders via SMS and email, real-time building performance insights, secure online document storage, and comprehensive financial tracking - all in one user-friendly platform."
     },
     {
-      question: "What payment methods do you support?",
-      answer: "We support all major payment methods including bank transfers, credit cards, and mobile money. We also integrate with popular payment platforms to ensure maximum flexibility for both landlords and tenants."
+
+
+      question: "What features does RentMaster offer for financial management?",
+      answer: "RentMaster provides comprehensive financial tools including payment tracking, receipt storage, income visualization through simple charts, automatic tax calculations, and multi-currency support. You can easily monitor both income and expenses, and generate detailed financial reports."
     },
     {
-      question: "Is my data secure?",
-      answer: "Absolutely! We use bank-level encryption and security measures to protect your data. All information is stored in secure cloud servers with regular backups to ensure your data is always safe and accessible."
+
+
+      question: "How does RentMaster help with tenant management?",
+      answer: "RentMaster simplifies tenant management by organizing tenant information, automating payment reminders, securely storing important documents, and tracking utility payments. This helps reduce late payments and keeps all tenant-related information organized in one place."
     },
     {
-      question: "Can I manage multiple properties?",
-      answer: "Yes! RentMaster is designed to handle multiple properties efficiently. You can manage different properties, units, and tenants all from one central dashboard."
+
+
+      question: "What building management features are available?",
+      answer: "RentMaster offers comprehensive building management tools including centralized financial tracking, detailed performance graphs, profitability analysis by room/area, broker management, and expense tracking. This helps you make informed decisions about your properties."
     },
     {
-      question: "Do you offer customer support?",
-      answer: "Yes, we provide comprehensive customer support through multiple channels including phone, email, and chat. Our support team is available during business hours to assist you with any questions or issues."
+
+
+      question: "How does RentMaster handle team access and data security?",
+      answer: "RentMaster provides different access levels for team members, tracks user activities, and ensures all data is securely backed up online. The platform is designed to be user-friendly while maintaining strict security standards to protect your information."
+    },
+    {
+      question: "Can RentMaster handle multiple properties?",
+      answer: "Yes! RentMaster is specifically designed to manage multiple buildings through one account. You can easily track and manage different properties, monitor their performance, and handle all related tasks from a single dashboard."
+    },
+    {
+      question: "What if there's a feature I need that isn't currently available?",
+      answer: "We actively welcome and value user feedback! Our development team regularly implements new features based on user suggestions and requirements. If there's something specific you need, please let us know and we'll work on implementing it to make RentMaster even more valuable for your business."
     }
   ];
-
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
@@ -57,4 +74,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ; 
+export default FAQ;

@@ -46,6 +46,7 @@ function App() {
         <Pricing />
        
         <FAQ />
+        <About />
         <Contact />
       </div>
       <Footer />

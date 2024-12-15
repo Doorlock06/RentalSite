@@ -6,11 +6,8 @@ const Contact = () => {
       <div className="container">
         <h2>Get In Touch</h2>
         <div className="contact-content">
-          <div className="contact-info">
-            <h3>Contact Information</h3>
-            <p><FaEnvelope className="contact-icon" /> info@rentmaster.com</p>
-            <p><FaPhone className="contact-icon" /> (555) 123-4567</p>
-            <p><FaMapMarkerAlt className="contact-icon" /> 123 Property Street, Real Estate City, 12345</p>
+          <div className="contact-text">
+            <p>Ready to transform your property management experience with RentMaster? Whether you have questions about our features, need technical assistance, or want to discuss how we can help streamline your property management, our team is here to help.</p>
           </div>
           <form className="contact-form">
             <div className="form-group">
@@ -38,4 +35,4 @@ const Contact = () => {
   )
 }
 
-export default Contact 
+export default Contact

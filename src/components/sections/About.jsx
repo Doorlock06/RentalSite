@@ -45,21 +45,6 @@ const About = () => {
               </div>
             </div>
 
-            <div className="about-visuals">
-              <div className="about-animation">
-                <Lottie 
-                  animationData={animationData}
-                  loop={true}
-                  autoplay={true}
-                  style={{ width: '100%', height: 'auto' }}
-                />
-              </div>
-              <img 
-                src={teamImage}
-                alt="Our Team"
-                className="team-image"
-              />
-            </div>
           </div>
         </div>
       </div>

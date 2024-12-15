@@ -6,11 +6,11 @@ const Features = () => {
       icon: <FaBuilding />,
       title: "Building Management",
       points: [
-        "Keep track of all financials in one place",
-        "View detailed performance graphs",
-        "Identify most profitable rooms",
-        "Manage brokers effectively",
-        "Track building expenses easily"
+        "Keep track of all your building's financials in one place",
+        "View detailed building performance with simple graphs",
+        "Identify the most profitable rooms or areas",
+        "Manage brokers and see which ones bring in tenants",
+        "Manage and track building expenses easily"
       ]
     },
     {
@@ -19,9 +19,11 @@ const Features = () => {
       points: [
         "Track payments easily",
         "Store receipts safely",
-        "See income in simple charts",
+       
         "Calculate tax automatically",
-        "Exchange between different currencies"
+
+        "Exchange between different currencies",
+        "Track and manage expenses"
       ]
     },
     {
@@ -31,7 +33,7 @@ const Features = () => {
         "Keep tenant info organized",
         "Send automatic reminders",
         "Save important documents",
-        "Track utility payments"
+        "Tenant Portal for easy communication",        "Track utility payments"
       ]
     },
     {
@@ -47,7 +49,7 @@ const Features = () => {
   ];
 
   return (
-    <section id="features" className="features">
+    <section  className="features">
       <div className="container">
         <h2>Core Features</h2>
         <div className="features-grid">
@@ -74,4 +76,4 @@ const Features = () => {
   );
 };
 
-export default Features; 
+export default Features;

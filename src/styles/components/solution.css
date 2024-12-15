@@ -3,9 +3,9 @@
   min-height: 100vh;
   display: flex;
   align-items: flex-start;
-  background-position: bottom left;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-position-y: -66px;
+  background-size: 100%;
+  background-image: url("../../assets/img/Rectangle 2.png");
 }
 
 .section-description {
@@ -17,9 +17,10 @@
 
 .solution-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
   margin-top: 4rem;
+  grid-auto-rows: minmax(100px, auto);    justify-items: center;
 }
 
 .solution-visual {
@@ -55,20 +56,6 @@
   gap: 2rem;
 }
 
-.solution-card {
-  background: var(--Background-Color2);
-  padding: 2.5rem;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-  border: 1px solid var(--Secondary-Color30);
-  box-shadow: 0 4px 6px var(--Secondary-Color20);
-  min-height: 250px;
-}
-
-.solution-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--Primary-Color);
-}
 
 .solution-icon {
   color: var(--Accent-Color);
@@ -76,21 +63,18 @@
   margin-bottom: 1rem;
 }
 
-.solution-card h3 {
-  color: var(--Text-Color);
-  margin-bottom: 1.5rem;
-  font-size: 1.2rem;
-}
-
-.solution-card ul {
-  list-style: none;
-  padding: 0;
-}
 .solution-main-benift {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: flex-start;
+      background: rgb(226 226 226) !important;
+      justify-content: center;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 345px;
+      background: var(--Background-Color);
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid var(--Secondary-Color30);
+      box-shadow: 0 4px 6px var(--Secondary-Color20);
 }
 .solution-description{
   font-size: 0.9rem;
@@ -103,7 +87,9 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
+  width: 320px;
+
 }
 .inside-main-benift {
   display: flex;
@@ -133,7 +119,7 @@
 
 @media (max-width: 1024px) {
   .solution-content {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   
   .solution-visual {
@@ -147,6 +133,9 @@
 }
 
 @media (max-width: 768px) {
+  .solution-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .solution {
     padding: 6rem 1rem;
   }

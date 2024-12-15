@@ -7,7 +7,16 @@
   background-size: 1700px;
   background-image: url("../../assets/img/Rectangle 4.png");
 }
-
+.hero-button {
+  background: var(--Primary-Color);
+  color: var(--White-Color);
+  padding: .8rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+}
 .hero-background {
   position: absolute;
   top: 0;

@@ -21,6 +21,7 @@ const Hero = () => {
               handle everything from rent payments to paperwork, so you can
               spend more time growing your business.
             </p>
+            <button className="hero-button">Get Started  {"==>"}</button>
           </div>
          
         </div>

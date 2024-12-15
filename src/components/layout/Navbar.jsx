@@ -29,6 +29,12 @@ const Navbar = () => {
           <div className="nav-straightline"></div>
           <div className="diamond-bottom"></div>
         </div>
+        <a href="#about"><div className="nav-link-container">About</div></a>
+        <div className="nav-separator">
+          <div className="diamond-top"></div>
+          <div className="nav-straightline"></div>
+          <div className="diamond-bottom"></div>
+        </div>
         <a href="#contact"><div className="nav-link-container">Contact</div></a>
       </div>
       <div className="auth-buttons">
